@@ -135,7 +135,7 @@ if(validItem==true){
 
             cout<<"Invalid money entry, try again"<<endl;
         }
-        else if(x>0 && diff>=0)
+        else if(x>=0 && diff>=0)
 
         {   cout<<"\n";
             cout<<"Collect your food item from below"<<endl;
