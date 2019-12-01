@@ -3,10 +3,10 @@
 
 
 //data.in file has all the input
-//1st line: number of stock for each type of items
+//1st line: currency type 
 //2nd line: Name of the products
 //3rd line: price of each product of one unit each
-//4th line: currency type
+//4th line: number of stock for each type of items
 //5th line: different type of coins and notes accepted by the machine 
 //6th line: value of the coins and notes converted to the lowest unit
 
