@@ -34,7 +34,7 @@ int currencyVal;
 
 
 void prinNameandPrice(Item N, string currencyType, int count ){
-cout <<count<<":"<<" "<< N.productName<<" "<<currencyType<<N.price<< "\n";
+cout <<count<<":"<<" "<< N.productName<<" "<<currencyType<<N.price<<endl;
 
 cout <<"\n";
 
@@ -119,7 +119,11 @@ if (validItem)
 if(validItem==true){
         cout<<"\n";
         cout<<"\n";
-        cout<<"Enter the total payment"<<endl;
+        cout<<"Enter the total payment(enter 0.01 to any big number)"<<endl;
+        cout<<"We accept:"<<endl;
+          for(int i=0; i<6; ++i ){
+                cout<<money[i].currency<<endl;
+            }
         cin>>pay;
         float x= pay-cost;
         int diff= item[product-1].stock-num;
@@ -150,10 +154,10 @@ if(validItem==true){
                 int typeNumber= change/money[5-i].currencyVal;
                 cout<<"Returning "<<typeNumber<<" "<<money[5-i].currency<<endl;
                 change=change-(typeNumber*money[5-i].currencyVal);
-                cout<<"\n";
+
 
             }
-
+cout<<"\n";
             }
             else {cout<<"Oops! we ran out of the product you are looking for, please try a different product"<<endl;
             num=0;}
@@ -173,9 +177,9 @@ if(validItem==true){
                 int typeNumber= change/money[5-i].currencyVal;
                 cout<<"Returning "<<typeNumber<<" "<<money[5-i].currency<<endl;
                 change=change-(typeNumber*money[5-i].currencyVal);
-                cout<<"\n";
              num=0;
             }
+                cout<<"\n";
 
             }
     }
