@@ -201,7 +201,7 @@ cost=vend.totalCost( validItem, num, item, product, currencyType);
 
 ///*
 num=vend.mainOperation(validItem,money, cost,item,currencyType, num, product);
-cout<<num;
+//cout<<num;
 
 
 item[product-1].stock=item[product-1].stock-num;
